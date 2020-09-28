@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\order;
 use Illuminate\Http\Request;
 
-class orderController extends Controller
+class OrderController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,9 +14,9 @@ class orderController extends Controller
      */
     public function index()
     {
-    
+
         $orders = Order::all();
-        return view ('order.index',compact('orders'));
+        return view ('order.index', compact('orders'));
     }
 
     /**
